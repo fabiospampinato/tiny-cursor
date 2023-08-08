@@ -2,7 +2,7 @@
 /* IMPORT */
 
 import {describe} from 'fava';
-import {setTimeout} from 'node:timers/promises';
+import {setTimeout as delay} from 'node:timers/promises';
 import Cursor from '../dist/index.js';
 
 /* MAIN */
@@ -15,39 +15,39 @@ describe ( 'Tiny Cursor', it => {
 
     Cursor.hide ();
 
-    await setTimeout ( 150 );
+    await delay ( 150 );
 
     t.false ( Cursor.has () );
 
     Cursor.show ();
 
-    await setTimeout ( 150 );
+    await delay ( 150 );
 
     t.true ( Cursor.has () );
 
     Cursor.toggle ();
 
-    await setTimeout ( 150 );
+    await delay ( 150 );
 
     t.false ( Cursor.has () );
 
     Cursor.toggle ();
 
-    await setTimeout ( 150 );
+    await delay ( 150 );
 
     t.true ( Cursor.has () );
 
     Cursor.toggle ( true );
     Cursor.toggle ( true );
 
-    await setTimeout ( 150 );
+    await delay ( 150 );
 
     t.true ( Cursor.has () );
 
     Cursor.toggle ( false );
     Cursor.toggle ( false );
 
-    await setTimeout ( 150 );
+    await delay ( 150 );
 
     t.false ( Cursor.has () );
 
