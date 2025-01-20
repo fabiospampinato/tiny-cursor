@@ -2,6 +2,7 @@
   "name": "tiny-cursor",
   "repository": "github:fabiospampinato/tiny-cursor",
   "description": "A tiny library for hiding and showing the cursor in the terminal.",
+  "license": "MIT",
   "version": "2.0.0",
   "type": "module",
   "main": "dist/index.js",
@@ -23,12 +24,12 @@
     "show"
   ],
   "dependencies": {
-    "when-exit": "^2.1.1"
+    "when-exit": "^2.1.4"
   },
   "devDependencies": {
-    "@types/node": "^20.4.8",
-    "fava": "^0.2.1",
-    "tsex": "^3.0.1",
-    "typescript": "^5.1.6"
+    "@types/node": "^18.19.71",
+    "fava": "^0.3.4",
+    "tsex": "^4.0.2",
+    "typescript": "^5.7.3"
   }
 }
