@@ -5,7 +5,7 @@ A tiny library for hiding and showing the cursor in the terminal.
 ## Install
 
 ```sh
-npm install --save tiny-cursor
+npm install tiny-cursor
 ```
 
 ## Usage
